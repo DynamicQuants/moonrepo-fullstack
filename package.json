@@ -5,5 +5,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  },
+  "devDependencies": {
+    "@moonrepo/cli": "^1.29.4"
+  },
+  "packageManager": "pnpm@9.11.0"
 }
