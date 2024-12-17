@@ -17,12 +17,9 @@ node_modules
 .env.test.local
 .env.production.local
 
-# Tests
+# Tests.
 coverage
 .nyc_output
-
-# Turbo.
-.turbo
 
 # Vercel.
 .vercel
@@ -35,7 +32,7 @@ dist
 .swc
 tsconfig.tsbuildinfo
 
-# Logs
+# Logs.
 logs
 *.log
 npm-debug.log*
@@ -44,8 +41,9 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# Misc OS.
+# System Files.
 .DS_Store
+Thumbs.db
 *.pem
 
 # Temp directory.
@@ -61,6 +59,6 @@ pids
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
-# moon
+# Moonrepo.
 .moon/cache
 .moon/docker

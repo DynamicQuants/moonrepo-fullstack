@@ -1,0 +1,54 @@
+{
+  /*
+   * ********************************************************************************************
+   * Typescript settings.
+   * ********************************************************************************************
+   */
+
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.tera": "handlebars"
+  },
+
+  /*
+   * ********************************************************************************************
+   * Python settings.
+   * ********************************************************************************************
+   */
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never",
+      "source.unusedImports": "never"
+    }
+  },
+  "python.terminal.activateEnvironment": true,
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "standard",
+  "black-formatter.args": ["--line-length", "100"],
+  "isort.args": [
+    "--profile",
+    "black",
+    "--line-length",
+    "100"
+    // These should be set by the user, depending on the project.
+    // Example:
+    // "--src-path",
+    // "./packages/core",
+    // "--src-path",
+    // "./packages/utils"
+  ],
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingTypeStubs": "warning"
+  },
+  "mypy-type-checker.args": ["--ignore-missing-imports"],
+  "python.testing.pytestArgs": [],
+
+  // These should be set by the user, depending on the project.
+  "python.analysis.extraPaths": []
+}
