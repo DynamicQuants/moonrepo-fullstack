@@ -19,12 +19,8 @@ rm_jq_output=$(jq 'del(.packageManager, .engines)' package.json)
 # Write the output to the package.json file
 echo "$rm_jq_output" > package.json
 
-# Make sed command compatible in both Mac and Linux environments.
-# Reference: https://stackoverflow.com/a/38595160/8696958
-sedi () {
-  sed --version >/dev/null 2>&1 && sed -i -- "$@" || sed -i "" "$@"
-}
-
-# Putting the new name and description in the README.md file
-sedi "s/# 🌕 Moonrepo Fullstack Template/# $name/g" README.md
-sedi "s/This repository is a Moonrepo project template for multi-language fullstack apps. For now, it supports Python, NestJS backends, and NextJS and Expo frontends./$description/g" README.md
+# Create a new README.md file with the new name and description
+rm -f README.md
+echo "# $name" > README.md
+echo "" >> README.md
+echo "$description" >> README.md
