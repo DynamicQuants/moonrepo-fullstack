@@ -1,7 +1,7 @@
 {
   "name": "moonrepo-fullstack",
-  "version": "1.0.0",
   "description": "A fullstack multi-language project using moonrepo",
+  "version": "1.0.0",
   "private": true,
   "scripts": {},
   "dependencies": {},
