@@ -1,9 +1,9 @@
 proto = "^0.44.2"
-moon = "^1.30.5"
-node = "^20.18.0"
-pnpm = "^9.15.1"
-python = "^3.11.10"
-uv = "^0.5.9"
+moon = "^1.30.6"
+node = "^20.18.1"
+pnpm = "^9.15.3"
+python = "^3.11.11"
+uv = "^0.5.14"
 
 [plugins]
 moon = "https://raw.githubusercontent.com/moonrepo/moon/master/proto-plugin.toml"
